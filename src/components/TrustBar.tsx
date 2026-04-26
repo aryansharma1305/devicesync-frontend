@@ -1,24 +1,17 @@
 export default function TrustBar() {
-  const stats = [
-    ["500+", "devices"],
-    ["12", "orgs"],
-    ["99.1%", "install success rate"],
-  ];
-
   return (
-    <section className="border-y border-border-dim bg-bg-base px-5 py-8">
+    <section className="border-y border-border-dim bg-bg-base px-5 py-10">
       <div className="mx-auto max-w-[1080px] text-center">
-        <p className="mb-4 text-[12px] uppercase tracking-[0.08em] text-text-lo">
-          TRUSTED BY IT TEAMS MANAGING
+        <p className="mb-3 text-[12px] uppercase tracking-[0.08em] text-text-lo">
+          PRIVATE BETA
         </p>
-        <div className="flex flex-col items-center justify-center gap-8 sm:flex-row sm:gap-16">
-          {stats.map(([value, label]) => (
-            <div key={label}>
-              <div className="font-mono text-[20px] font-semibold text-text-hi">{value}</div>
-              <div className="text-[12px] text-text-lo">{label}</div>
-            </div>
-          ))}
-        </div>
+        <p className="mx-auto max-w-2xl text-[22px] font-semibold leading-[1.4] text-text-hi">
+          Currently working with our first 10 IT teams.
+        </p>
+        <p className="mx-auto mt-3 max-w-xl text-[14px] leading-[1.7] text-text-mid">
+          DeviceSync is accepting private beta requests from teams managing mixed
+          macOS, Windows, and Linux fleets. Apply for early access below.
+        </p>
       </div>
     </section>
   );

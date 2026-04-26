@@ -1,6 +1,8 @@
 import AnimatedBackground from "@/components/AnimatedBackground";
+import Comparison from "@/components/Comparison";
 import CTA from "@/components/CTA";
 import DashboardPreview from "@/components/DashboardPreview";
+import FAQ from "@/components/FAQ";
 import Features from "@/components/Features";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
@@ -9,6 +11,7 @@ import Navbar from "@/components/Navbar";
 import Pricing from "@/components/Pricing";
 import Preloader from "@/components/Preloader";
 import Problem from "@/components/Problem";
+import OpenSourceBanner from "@/components/OpenSourceBanner";
 import Reveal from "@/components/Reveal";
 import Results from "@/components/Results";
 import Solution from "@/components/Solution";
@@ -27,6 +30,9 @@ export default function Home() {
         <Reveal delay={0.05}>
           <TrustBar />
         </Reveal>
+        <Reveal>
+          <OpenSourceBanner />
+        </Reveal>
         <hr className="border-border-dim" />
         <Reveal>
           <Problem />
@@ -34,6 +40,10 @@ export default function Home() {
         <hr className="border-border-dim" />
         <Reveal>
           <Solution />
+        </Reveal>
+        <hr className="border-border-dim" />
+        <Reveal>
+          <Comparison />
         </Reveal>
         <hr className="border-border-dim" />
         <Reveal>
@@ -50,6 +60,10 @@ export default function Home() {
         <hr className="border-border-dim" />
         <Reveal>
           <Pricing />
+        </Reveal>
+        <hr className="border-border-dim" />
+        <Reveal>
+          <FAQ />
         </Reveal>
         <hr className="border-border-dim" />
         <Reveal>

@@ -3,9 +3,14 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "DeviceSync | AI Hardware Compatibility",
+  title: "DeviceSync — AI Hardware Compatibility for IT Teams",
   description:
-    "DeviceSync predicts hardware compatibility before deployment, automates driver installs, and learns from every fleet outcome.",
+    "Predict driver failures before deployment. DeviceSync gives every device in your fleet a live compatibility score powered by ML.",
+  openGraph: {
+    title: "DeviceSync",
+    description: "Predict driver failures before deployment.",
+    url: "https://devicesync-frontend.vercel.app",
+  },
 };
 
 export default function RootLayout({

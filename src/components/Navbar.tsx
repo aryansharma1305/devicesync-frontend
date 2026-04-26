@@ -1,5 +1,10 @@
 export default function Navbar() {
-  const links = ["Features", "How It Works", "Pricing", "Docs"];
+  const links = [
+    ["Features", "#features"],
+    ["How It Works", "#how-it-works"],
+    ["Pricing", "#pricing"],
+    ["Docs", "#docs"],
+  ];
 
   return (
     <header className="sticky top-0 z-50 h-14 border-b border-border-dim bg-bg-base">
@@ -10,10 +15,10 @@ export default function Navbar() {
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">
-          {links.map((link) => (
+          {links.map(([link, href]) => (
             <a
               key={link}
-              href={`#${link.toLowerCase().replaceAll(" ", "-")}`}
+              href={href}
               className="text-[14px] text-text-mid transition-colors hover:text-text-hi"
             >
               {link}

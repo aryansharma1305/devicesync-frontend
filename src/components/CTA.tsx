@@ -1,7 +1,11 @@
+import EarlyAccessForm from "@/components/EarlyAccessForm";
+
+const demoUrl = "https://calendly.com/aryansharma1305/devicesync-demo";
+
 export default function CTA() {
   return (
     <section id="cta" className="border-b border-border-dim bg-bg-surface px-5 py-16 md:py-24">
-      <div className="mx-auto max-w-xl text-center">
+      <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-[36px] font-bold leading-tight text-text-hi">
           Stop finding out after it breaks.
         </h2>
@@ -9,15 +13,12 @@ export default function CTA() {
           Join IT teams already using DeviceSync to predict compatibility failures
           before they reach production.
         </p>
-        <div className="flex flex-col justify-center gap-4 sm:flex-row">
+        <EarlyAccessForm />
+        <div className="mt-6 flex justify-center">
           <a
-            href="#"
-            className="rounded-md bg-accent px-6 py-3 text-[14px] font-semibold text-text-hi transition-colors hover:bg-accent-hover"
-          >
-            Get Early Access
-          </a>
-          <a
-            href="#"
+            href={demoUrl}
+            target="_blank"
+            rel="noreferrer"
             className="rounded-md border border-border-bright px-6 py-3 text-[14px] text-text-mid transition-colors hover:text-text-hi"
           >
             Book a Demo
