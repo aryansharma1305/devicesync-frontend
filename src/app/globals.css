@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@config "../../tailwind.config.ts";
+
+@theme {
+  --color-bg-base: #09090B;
+  --color-bg-surface: #111113;
+  --color-bg-raised: #18181B;
+  --color-border-dim: #27272A;
+  --color-border-bright: #3F3F46;
+  --color-text-hi: #FAFAFA;
+  --color-text-mid: #A1A1AA;
+  --color-text-lo: #52525B;
+  --color-accent: #2563EB;
+  --color-accent-hover: #1D4ED8;
+  --color-accent-dim: #1E3A5F;
+  --color-success: #16A34A;
+  --color-warning: #CA8A04;
+  --color-danger: #DC2626;
+  --color-code-bg: #0D0D0F;
+  --color-code-border: #1F1F23;
+  --font-sans: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+@layer base {
+  html {
+    background-color: #09090B;
+    color: #A1A1AA;
+    font-family: "Inter", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    background-color: #09090B;
+    color: #A1A1AA;
+    min-height: 100vh;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  ::selection {
+    background: #2563EB;
+    color: #FAFAFA;
+  }
+}
